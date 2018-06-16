@@ -6,6 +6,8 @@ from fastai.fastai.dataset import *
 from fastai.fastai.sgdr import *
 #from fastai.fastai.plots import *
 
+torch.manualSeed(40)
+
 def fit_eval_imageclassifier(max_zoom, lr, ps, epochs, cycle_len, cycle_mult): 
     # load data and model 
     sz = 224 
