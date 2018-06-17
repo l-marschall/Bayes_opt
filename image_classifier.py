@@ -7,7 +7,8 @@ from fastai.fastai.sgdr import *
 #from fastai.fastai.plots import *
 
 def fit_eval_imageclassifier(max_zoom, lr, ps, epochs, cycle_len, cycle_mult):
-    torch.manual_seed(40)
+    torch.manual_seed(314)
+    np.random.seed(314)
     # load data and model 
     sz = 224 
     PATH = "data/dogscats/"
